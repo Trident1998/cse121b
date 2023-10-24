@@ -1,0 +1,30 @@
+.div {
+    border: 1px solid #ccc; 
+    max-width: 900px; 
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: #eeeeee;
+}
+
+
+.div ul {            
+    column-count: 2;
+    column-gap: 20px;
+    list-style: none;
+}
+
+.div ul li {
+    margin: 5px;
+    background-color: #f0f0f0;
+    padding: 5px;
+}
+
+#selected-currency ul, #selected-currency-and-date ul{
+    column-count: unset;
+    column-gap:  unset;
+}
+
+main {
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+}
