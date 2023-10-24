@@ -1,4 +1,4 @@
-import { updateChart } from './chart.js';
+import { setUpCurency } from './set-up-curency.js';
 
 
 const currentDate = new Date();
@@ -24,22 +24,7 @@ const currencyShortNames = [
     "XPD"
 ];
 
-const currencySelector = document.querySelector(".select-currency");
-const currencySelectorAndDate = document.querySelector(".select-currency-and-date");
-
-
-currencyShortNames.forEach(name => {
-    const option1 = document.createElement("option");
-    option1.value = name;
-    option1.textContent = name;
-
-    const option2 = document.createElement("option");
-    option2.value = name;
-    option2.textContent = name;
-
-    currencySelector.appendChild(option1);
-    currencySelectorAndDate.appendChild(option2);
-});
+setUpCurency();
 
 
 const displayCurrency = (currencies, div) => {
